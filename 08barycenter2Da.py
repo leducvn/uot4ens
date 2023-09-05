@@ -231,7 +231,7 @@ area = 'Kyushu'; analysis_date = '202007030600'
 iexp = 100; nmember0 = 21
 #iexp = 2; nmember0 = 1001
 #experiment = 'Kyushu02km'; start = 6*60; end = 15*60
-experiment = 'Fugaku05km'; expdesc='MEPS'; start = 9*60; end = 12*60
+experiment = 'Fugaku05km'; expdesc='MEPS'; start = 9*60; end = 18*60
 
 
 format = 'png'
@@ -332,8 +332,9 @@ for k in range(3):
    invalid = invalid == 1
    rain[invalid] = 0.
    write_field('rain.nc', lon, lat, rain)
-   output_file = output_dir+'/Figure05'+figtype[k]+'.'+format
+   output_file = output_dir+'/Figure07'+figtype[k]+'.'+format
    if projection == 'MER ': plot_mer(area)
    elif projection == 'LMN ': plot_lmn(area, fcsttype[k], figtype[k])
    shutil.move('map.'+format, output_file)
 os.chdir(current_dir)
+#os.system('rm -rf '+work_dir)
