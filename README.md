@@ -2,9 +2,10 @@
 Unbalanced Optimal Transport for Ensemble Forecast
 
 This library contains data and Python scripts used to generate figures for the article:
+
 Geometry of rainfall ensemble means: from arithmetic averages to Gaussian-Hellinger barycenters in unbalanced optimal transport
-by Le Duc and Yohei Sawada
-in Journal of the Meteorological Society of Japan.
+
+by Le Duc and Yohei Sawada in Journal of the Meteorological Society of Japan.
 
 There are two types of Python scripts:
 1. The Sinkhorn-Knoop algorithms are implemented into:
